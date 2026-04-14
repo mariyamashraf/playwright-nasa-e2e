@@ -1,9 +1,4 @@
-# Playwright NASA Assessment
-
-End-to-end Playwright coverage for the [NASA Image and Video Library](https://images.nasa.gov)
-across UI automation, REST API testing, and API-to-UI consistency validation.
-
-## Stack
+# Playwright NASA E2E Tests
 
 - **Node.js** ≥ 18 (LTS recommended)
 - **TypeScript** 5.x
