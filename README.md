@@ -128,43 +128,6 @@ playwright-nasa-assessment/
 
 ---
 
-## Pushing to GitHub (from scratch)
-
-```bash
-# From inside the project folder:
-
-# 1. Initialise git (skip if already a git repo)
-git init
-
-# 2. Create a .gitignore
-cat > .gitignore <<'EOF'
-node_modules/
-playwright-report/
-test-results/
-.DS_Store
-EOF
-
-# 3. Stage everything
-git add .
-
-# 4. Initial commit
-git commit -m "feat: initial Playwright NASA assessment"
-
-# 5. Create a new repo on GitHub (via browser or gh CLI), then link the remote:
-git remote add origin https://github.com/<your-username>/playwright-nasa-assessment.git
-
-# 6. Push
-git branch -M main
-git push -u origin main
-```
-
-Using the **GitHub CLI** (simpler — installs from https://cli.github.com):
-```bash
-gh repo create playwright-nasa-assessment --public --source=. --remote=origin --push
-```
-
----
-
 ## Notes on Flaky Behavior & Mitigations
 
 | Observed behaviour | Mitigation |
